@@ -9,6 +9,7 @@ void input()
     while (true)
     {
         cout << "Masukkan Jumlah Data pada Array : ";                   // Membuat inputan jumlah element Array
+        cin >> n;                                                       // Memanggil variabel inputan n
     }
 
 }
