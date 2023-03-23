@@ -13,7 +13,12 @@ void input()
 
         if (n <= 20)
         {   // Membuat kondisi n tidak lebih dari 20
+            break;
 
+        }
+        else
+        {
+            cout << "\nArray yang anda masukkan maksimal 20 elemen. \n";            // Menamppilkan pesan jika data lebih dari 20
         }
     }
 
