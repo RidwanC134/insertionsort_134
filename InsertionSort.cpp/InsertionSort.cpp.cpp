@@ -43,7 +43,7 @@ void insertionsort()
 
     for (int i = 1; i < n; i++)                                         // 1. Looping dengan i dimulai dari 1 hingga n-1
     {
-        
+
         temp = arr[i];                                                  // 2. Simpan nilai arr[i] ke variabel sementara temp
 
         j = i - 1;                                                      // 3. Setting nilai j sama dengan i-1
@@ -56,13 +56,36 @@ void insertionsort()
         }
 
         arr[j + 1] = temp;                                              // 5. Simpan nilai temp ke dalam arr[j + 1]
+
+
+        cout << endl;
+        cout << "\nPass " << i << ": ";                                 // Output ke layar
+        for (int k = 0; k < n; k++)
+        {
+            cout << arr[k] << " ";                                      // Output ke layar
+        }
     }
+};
+
+void display()
+{
+    cout << endl;                                                       // Output baris kosong
+    cout << "Total Element Movement= " << n - 1 << endl;                // cout movement element
+    cout << "\n==========================" << endl;                     // Output ke layar
+    cout << "Element Array yang telah tersusun" << endl;                // Output ke layar
+    cout << "============================" endl;                        // Output ke layar
+
+    for (int j = 0; j < n; j++)
+    {                                                                   // Looping dengan j dimulai dari 0 hingga n-1
+        cout << arr[j] << endl;                                         // Output ke layar
+
+    }
+    cout << endl;                                                       // Output baris kosong
 }
-
-
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    input();                                                            // Memanggil input
+    inserttionsort();                                                   // Memanggil insertionsort
+    display();                                                          // Memanggil display
 }
-
