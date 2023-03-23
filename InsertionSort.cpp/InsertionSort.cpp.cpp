@@ -6,6 +6,10 @@ int n;                                  // Membuat variabel inputan n
 
 void input()
 {   // Procedure Input
+    while (true)
+    {
+        cout << "Masukkan Jumlah Data pada Array : ";                   // Membuat inputan jumlah element Array
+    }
 
 }
 
